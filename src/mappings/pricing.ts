@@ -31,7 +31,13 @@ export function getEthPriceInUSD(): BigDecimal {
     let usdcWeight = usdcPair.reserve1.div(totalLiquidityETH)
     return daiPair.token0Price.times(daiWeight).plus(usdcPair.token0Price.times(usdcWeight))
     // USDC is the only pair so far
-  } else if (usdcPair !== null) {
+  } else if (daiPair !== null && usdtPair !== null) {
+    let totalLiquidityETH = daiPair.reserve1.plus(usdtPair.reserve0)
+    let daiWeight = daiPair.reserve1.div(totalLiquidityETH)
+    let usdtWeight = usdtPair.reserve0.div(totalLiquidityETH)
+    return daiPair.token0Price.times(daiWeight).plus(usdtPair.token1Price.times(usdtWeight))
+    // USDC is the only pair so far
+  }else if (usdcPair !== null) {
     return usdcPair.token0Price
   } else {
     return ZERO_BD
