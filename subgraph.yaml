@@ -1,6 +1,6 @@
 specVersion: 0.0.2
-description: Uniswap is a decentralized protocol for automated token exchange on Ethereum.
-repository: https://github.com/Uniswap/uniswap-v2-subgraph
+description: Dulyswap is a decentralized protocol for automated token exchange on Ethereum.
+repository: https://github.com/agelessZeal/duly-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
@@ -8,9 +8,9 @@ dataSources:
     name: Factory
     network: mainnet
     source:
-      address: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
+      address: '0x14B1d795805ba3472C97B1AD609adb5aFF67Edf2'
       abi: Factory
-      startBlock: 10000834
+      startBlock: 13038038
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
