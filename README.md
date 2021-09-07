@@ -2,6 +2,8 @@
 
 [Duly](https://duly.com/) is a decentralized protocol for automated token exchange on Ethereum.
 
+[Duly Analytics](https://dulydata.info/)
+
 [https://thegraph.com/legacy-explorer/subgraph/agelesszeal/duly-exchange](https://thegraph.com/legacy-explorer/subgraph/agelesszeal/duly-exchange)
 
 This subgraph dynamically tracks any pair created by the dulyswap factory. It tracks of the current state of DulySwap contracts, and contains derived stats for things like historical data and USD prices.
