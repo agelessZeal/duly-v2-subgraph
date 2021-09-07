@@ -1,8 +1,8 @@
-# Uniswap V2 Subgraph
+# DulySwap V2 Subgraph
 
-[Uniswap](https://uniswap.org/) is a decentralized protocol for automated token exchange on Ethereum.
+[Duly](https://duly.com/) is a decentralized protocol for automated token exchange on Ethereum.
 
-This subgraph dynamically tracks any pair created by the uniswap factory. It tracks of the current state of Uniswap contracts, and contains derived stats for things like historical data and USD prices.
+This subgraph dynamically tracks any pair created by the dulyswap factory. It tracks of the current state of DulySwap contracts, and contains derived stats for things like historical data and USD prices.
 
 - aggregated data across pairs and tokens,
 - data on individual pairs and tokens,
