@@ -2,6 +2,8 @@
 
 [Duly](https://duly.com/) is a decentralized protocol for automated token exchange on Ethereum.
 
+[https://thegraph.com/legacy-explorer/subgraph/agelesszeal/duly-exchange](https://thegraph.com/legacy-explorer/subgraph/agelesszeal/duly-exchange)
+
 This subgraph dynamically tracks any pair created by the dulyswap factory. It tracks of the current state of DulySwap contracts, and contains derived stats for things like historical data and USD prices.
 
 - aggregated data across pairs and tokens,
@@ -40,18 +42,4 @@ Every transaction on Uniswap is stored. Each transaction contains an array of mi
 
 These contain specifc information about a transaction. Things like which pair triggered the transaction, amounts, sender, recipient, and more. Each is linked to a parent Transaction entity.
 
-## Example Queries
 
-### Querying Aggregated Uniswap Data
-
-This query fetches aggredated data from all uniswap pairs and tokens, to give a view into how much activity is happening within the whole protocol.
-
-```graphql
-{
-  uniswapFactories(first: 1) {
-    pairCount
-    totalVolumeUSD
-    totalLiquidityUSD
-  }
-}
-```
